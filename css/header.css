@@ -1,0 +1,30 @@
+.header {
+  border: solid 1px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-name {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.header-links {
+  display: flex;
+  margin-right: 1rem;
+  gap: 2rem;
+}
+
+.header-links-cv {
+  border-left: solid 2px;
+  padding-left: 2rem;
+}
+
+.header-links-realisations {
+  border-left: solid 2px;
+  padding-left: 2rem;
+}
