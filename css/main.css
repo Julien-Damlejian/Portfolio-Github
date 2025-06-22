@@ -2,3 +2,44 @@
 @import url("main.css");
 @import url("header.css");
 @import url("footer.css");
+
+body {
+  max-width: 1024px;
+  font-family: "Lexend Giga", sans-serif;
+}
+
+/*-------------------------------- Banner -------------------------------- */
+
+.banner-title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.banner-middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px 10px;
+}
+
+.banner-picture {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-text {
+  text-align: justify;
+}
+
+.banner-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.banner-bottom-link {
+  border: solid 1px;
+  border-radius: 16px;
+  text-decoration: none;
+  padding: 1rem;
+}

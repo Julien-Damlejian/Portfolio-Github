@@ -1,0 +1,9 @@
+footer {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  margin-top: 16px;
+}
+
+.footer-text {
+  text-align: center;
+}
