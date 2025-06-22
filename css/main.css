@@ -6,6 +6,7 @@
 body {
   max-width: 1024px;
   font-family: "Lexend Giga", sans-serif;
+  background-color: #f6f8fa;
 }
 
 /*-------------------------------- Banner -------------------------------- */
@@ -43,3 +44,25 @@ body {
   text-decoration: none;
   padding: 1rem;
 }
+
+/*-------------------------------- Parcours -------------------------------- */
+
+.parcours {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.parcours-container {
+  display: flex;
+  border: solid 1px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.parcours-img {
+  display: flex;
+  width: 20vh;
+}
+
+/*-------------------------------- Réalisations -------------------------------- */
