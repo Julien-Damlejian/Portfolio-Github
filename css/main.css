@@ -75,11 +75,13 @@ body {
 /*-------------------------------- Réalisations -------------------------------- */
 
 .realisation-container {
-  padding: 1.5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2rem;
-  row-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 2vw;
+  padding: 2vw;
+  max-width: 100vw;
+  margin: 0 auto;
 }
 
 .realisation-container-model {
@@ -90,20 +92,68 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
+  max-height: 50vh;
 }
 
 .realisation-container-img {
-  background: url("../img/nuage-de-mots.jpg") center/cover no-repeat;
-  height: 80vh;
-  width: 70vh;
-  grid-row: 1 / 3;
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(82, 82, 82, 0.4),
+      rgba(82, 82, 82, 0.4)
+    ),
+    url("../img/realisation.jpg") no-repeat center center;
+  background-size: auto 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.realisation-img {
-  display: block;
-  max-width: 100%;
+.realisation-title {
+  position: absolute;
+  top: 1rem;   /* un peu d’espace depuis le haut */
+  left: 1rem;  /* un peu d’espace depuis la gauche */
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* pour bien le détacher du fond */
+  user-select: none;
 }
 
-.realisation-projet {
-  border: solid 1px;
+.projet-coffee {
+  border: 5px solid #6c8c64;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
+
+.projet-pokedex {
+  border: 5px solid #f2c572;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.projet-a-venir {
+  border: 5px solid #f2811d;
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+.realisation-projet-img {
+  max-width: 25vh;
+}
+
+
+color list
+
+    #6c8c64,
+    #f2c572,
+    #f2eadf,
+    #f2811d,
+    #d95323
+
